@@ -1,0 +1,12 @@
+="javascript:void(window.open('" 
++ Globals!ReportServerUrl+ "?"
+
++ Globals!ReportFolder 
+
++ "/BidPrices&asAtDate=" 
++ Format(Fields!as_at_date.Value,"dd/MMM/yyyy") 
++ "&fundManagerUID=" 
++ CStr(Fields!FundManagerUID.Value) 
++ "&Investment=" 
++ Fields!Investment.Value 
++ "&rs:Command=Render&rc:Toolbar=False&rc:Parameters=False',null,'left=100,top=100,height=100,width=350,resizable=yes'))"
